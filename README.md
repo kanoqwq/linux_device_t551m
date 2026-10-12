@@ -4,7 +4,7 @@
 `dtb_b` / `dtbo_b` / `vendor_boot_b`，以原机 `boot_b` 为模板生成 Linux 启动镜像。
 不要直接使用 E5 发布包的启动镜像或启动控制块。
 
-本批功能、修复及验证记录见 [2026-10-10 修复记录](../../docs/CHANGELOG-2026-10-10.zh-CN.md)。
+本批功能、修复及验证记录见 [2026-10-10 修复记录](https://github.com/sprd-linux-devs/e5-linux/blob/main/docs/CHANGELOG-2026-10-10.zh-CN.md)。
 
 ## 硬件差异
 
@@ -344,7 +344,7 @@ SPTESTMODE、CGATT，并检查基带进程和 WAN 状态。
 
 已移植 `mu300-linux-clean-tf-7.2` 的 Aurora 主题、主题配置插件与完整 LuCI 看板。
 构建入口自动暂存四个哈希固定的 APK，并在首次启动安装、替换 Argon。
-详见 [看板适配说明](../../device/openwrt_device_common/luci-app-t551m/README.md)。
+详见 [看板适配说明](https://github.com/sprd-linux-devs/openwrt_device_common/blob/main/luci-app-t551m/README.md)。
 
 `atd.py` 采用 MU300 的常驻多通道分工：
 
@@ -442,7 +442,7 @@ NR 能力响应中的数量字段不再作为 n6；LTE 能力列表由平台配�
 
 已适配手机式状态栏、底部导航、跟手上滑锁屏、界面定制和网页壁纸设置。
 锁屏与看板共用日/月流量数据；息屏在内核输入层禁用触控，亮屏按用户设置恢复。
-配置入口、验证范围及维护方式见 [屏幕界面说明](infoscreen/README.md)。
+配置入口、验证范围及维护方式见 [屏幕界面说明](https://github.com/Enceka/infoscreen/blob/main/docs/device-ui.zh-CN.md)。
 
 ## 提示音与媒体音量
 
@@ -616,7 +616,7 @@ ECM 已验证枚举、网桥与串口保留，尚未在 Linux/macOS 主机测试
 ## 恢复系统
 
 KVM、Docker 的构建参数、按需启动和实机验证见
-[KVM 与 Docker](../../docs/CONTAINERS.zh-CN.md)。
+[KVM 与 Docker](https://github.com/sprd-linux-devs/e5-linux/blob/main/docs/CONTAINERS.zh-CN.md)。
 
 从 OpenWrt 执行 `/opt/e5/e5-next-boot android` 后 `reboot`。
 若 Linux 没有到达用户空间，未标记成功的 B 槽试启动会耗尽次数后回 A 槽。
